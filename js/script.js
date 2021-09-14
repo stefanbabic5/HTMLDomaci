@@ -5,7 +5,7 @@ $(document).ready(function(){
     });
 
     $("#lokacija2").click(function(){
-      $("#lokacija2_vanbg").slideToggle("fast");
+      $("#lokacija2_vanbg").slideToggle("slow");
     });
   });
 
