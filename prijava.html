@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/forma.js"></script>
+        <link rel="icon" href="../Mega Gym/images/logo.png">
+
+        <title>Mega Gym</title>
+    </head>
+<body>
+    <header>
+        <div class="gore">
+            <ul class="main-gore">
+                <li ><a href="index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li class="active "><a href="prijava.html">Učlanite se</a></li>
+                <li id="glogo"><img class="glogoimg" height="55px" src="images/logo.png" alt=""></li>
+            </ul>
+        </div>
+    </header>
+        <div class="center">
+            
+            <form name="myForm">
+                Ime i prezime: <input type="text" id="ime" name="ime" placeholder="Ime i prezime"/><br>
+                Broj telefona: <input type="tel" id="telefon" name="telefon" placeholder="Broj telefona"/><br>
+                E-mail: <input type="email" id="mail" name="mail" placeholder="E-Mail"/><br>
+               
+                <br>
+                Odaberite paket: <br>
+                 <select name="trener" id="birajt">
+                    <option>Biram trenera</option>
+                    <option value="id0">Neću trenera</option>
+                    <option value="id1">Pera Perić</option>
+                    <option value="id2">Milan Milanović</option>
+                    <option value="id3">Stefan Stefanović</option>
+                </select>
+                <select name="paket" id="birajp">
+                    <option>Biram paket</option>
+                    <option value="1">1 mesec - 3.000,00din</option>
+                    <option value="3">3 meseca - 7.000,00din</option>
+                    <option value="6">6 meseci - 12.000,00din</option>
+                </select>
+                <select name="plan" id="birajplan">
+                    <option>Biram plan</option>
+                    <option value="id1">Mršavljenje</option>
+                    <option value="id2">Nabaciti masu</option>
+                    <option value="id3">Yoga</option>
+                </select>
+                 <br>
+                <input type="reset" value="Poništi odgovor" />
+                <br>
+            </form>
+            <br>
+            <br>
+            <div id="dugmici">
+                <button id="spec">Pogledaj akciju meseca</button> <div id="spec_">   Yoga 50% popusta za 30+ godina</div> <br>
+                <button onclick="proveri()">Proveri svoje podatke</button>
+                <div id="podaci">
+                    <p id="pime">Ime: </p> <input type="text" id="pimee">
+                    <p id="ptele">Broj telefona: </p> <input type="text" id="ptelee">
+                    <p id="pmejl">E-mail: </p><input type="text" id="pmejle">
+                </div>
+                <button onclick="validacija()">Prijavi se</button>
+            </div>
+            <br>
+            <br>
+        </div>
+    </body>
+</html>
